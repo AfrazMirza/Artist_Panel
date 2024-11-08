@@ -1,0 +1,223 @@
+.app {
+    display: flex;
+  }
+  
+ /* slidebar CSS */
+
+ .sidebar {
+    width: 250px; /* Fixed width for the sidebar */
+    background-color: #f4f4f4; /* Light background color */
+    padding: 20px; /* Padding around the sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative;  /* Allows sidebar to scroll with the page */
+    height: auto;  /* Adjust height to content */
+    overflow-y: auto; /* Scrollable if content overflows */
+  }
+  
+  h3 {
+    margin: 0 0 15px; /* Margin below the heading */
+    font-size: 1.5em; /* Larger font for the heading */
+    color: #333; /* Dark color for contrast */
+  }
+  
+  ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+  }
+  
+  li {
+    margin: 10px 0; /* Space between list items */
+  }
+  
+  .sidebar a {
+    display: block; /* Make links fill the entire list item */
+    color: #333; /* Dark text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px; /* Padding for link areas */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background transition */
+  }
+  
+  .sidebar a:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: #fff; /* White text on hover */
+  }
+  
+
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  /* navbar CSS */
+
+  .navbar {
+    display: flex; /* Align items in a row */
+    justify-content: space-between; /* Space between title and links */
+    align-items: center; /* Center items vertically */
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text color */
+    padding: 15px 30px; /* Padding around navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5em; /* Larger font for the title */
+  }
+  
+  .navbar div {
+    display: flex; /* Align links in a row */
+    gap: 20px; /* Space between links */
+  }
+  
+  .navbar a {
+    color: #fff; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 15px; /* Padding for link areas */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background transition */
+  }
+  
+  .navbar a:hover {
+    background-color: #555; /* Darker background on hover */
+    color: #fff; /* Ensure text remains white on hover */
+  }
+  
+  .navbar a.active {
+    background-color: #007bff; /* Blue background for active link */
+    color: #fff; /* White text for active link */
+  }
+  
+  
+  .dashboard {
+    padding: 20px;
+  }
+  
+ /* AddPainting.js file CSS */
+
+  .painting-form {
+    max-width: 600px; /* Limit the width of the form */
+    margin: 0 auto; /* Center the form on the page */
+    padding: 20px; /* Add some padding around the form */
+    border: 1px solid #ccc; /* Add a light border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    
+  }
+  
+  .painting-form label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 8px; /* Add space below labels */
+    font-weight: bold; /* Bold font for labels */
+  }
+  
+  .painting-form input[type="text"],
+  .painting-form textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 20px; /* Space between inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+  }
+  
+  .painting-form textarea {
+    resize: vertical; /* Allow vertical resizing of the textarea */
+    height: 100px; /* Set a default height */
+  }
+  
+  .painting-form button {
+    background-color: #007bff; /* Green background for submit button */
+    color: white; /* White text color */
+    margin:20px auto;
+    width:100px;
+    display: block;
+    padding: 10px 15px; /* Padding inside button */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+  }
+  
+  .painting-form button:hover {
+    background-color: #0056b3; /* Darker green on hover */
+  }
+  
+  /* Style for horizontal labels and inputs */
+  .painting-form > label {
+    display: inline-block; /* Inline block to allow side by side layout */
+    width: 120px; /* Fixed width for labels */
+    vertical-align: top; /* Align labels to the top */
+  }
+  
+  .painting-form > input[type="text"],
+  .painting-form > textarea {
+    display: inline-block; /* Inline block for inputs */
+    width: calc(100% - 130px); /* Adjust width for inputs */
+    margin-left: 10px; /* Space between label and input */
+  }
+  
+
+/* PaintingsList.js file CSS */
+
+.paintings-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap into the next line */
+    gap: 20px; /* Space between items */
+    margin: 20px 0; /* Space above and below the paintings list */
+  }
+  
+  .painting-card {
+    background-color: #f9f9f9; /* Light background for contrast */
+    border: 1px solid #ccc; /* Border for definition */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 15px; /* Inner spacing */
+    width: calc(33.333% - 20px); /* Adjust width for 3 items per row, minus gap */
+    text-align: center; /* Center text in card */
+    transition: transform 0.2s; /* Smooth transform for hover effect */
+  }
+  
+  .painting-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .painting-card img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Round image corners */
+  }
+  
+  h1 {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+  }
+
+  h2 {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  h3 {
+    font-size: 1.2em; /* Slightly larger font for titles */
+    margin: 10px 0; /* Space around titles */
+  }
+  
+  p {
+    margin: 5px 0; /* Space around paragraphs */
+    display: flex; /* Make paragraphs flex containers */
+    justify-content: space-between; /* Align text horizontally */
+  }
+  
+  p:before {
+    content: attr(data-label); /* Use a data attribute for label */
+    font-weight: bold; /* Bold labels */
+  }
+  
+  p[data-label]:before {
+    margin-right: 10px; /* Space between label and value */
+  }
+  

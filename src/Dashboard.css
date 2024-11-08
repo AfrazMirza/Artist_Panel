@@ -1,0 +1,87 @@
+/* Dashboard.css */
+
+/* General Container Styling */
+.dashboard {
+  max-width: 800px;
+  display: block; /* Or flex with correct alignment settings */
+  text-align: left; /* General text alignment */
+  margin: 20px auto; /* Center the dashboard */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Heading Styling */
+.dashboard h2 {
+  text-align: center;
+  color: #333; /* Dark gray */
+  margin-bottom: 20px; /* Space below heading */
+  font-size: 2em; /* Larger font size */
+}
+
+section {
+  margin-bottom: 30px; /* Space between sections */
+  padding: 15px;
+  background-color: #ffffff; /* White background for sections */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+/* Subheading Styling */
+section h3 {
+  text-align: center;
+  margin: 10px; /* Space below subheading */
+  color: #007bff; 
+}
+
+/* Paragraph Styling */
+section p {
+  margin: 5px 0; /* Margin between paragraphs */
+  color: #555; /* Medium gray */
+}
+
+/* List Styling */
+.activities-section ul {
+  list-style-type: disc; /* Disc-style bullet points */
+  padding-left: 20px; /* Indentation */
+  color: #555; /* Medium gray */
+}
+
+.activities-section li {
+  margin-bottom: 8px; /* Space between list items */
+}
+
+/* Button Styling */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  /* text-align: center; */
+  background-color: #007bff;
+  color: #ffffff; /* White text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  font-size: 1em; /* Font size */
+}
+
+button:hover {
+  background-color: #0056b3; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+  
+  .dashboard h2 {
+    font-size: 1.5em; /* Adjust heading size */
+  }
+
+  button {
+    width: 100%; /* Full width for better usability */
+    margin-bottom: 10px; /* Space between buttons */
+  }
+}

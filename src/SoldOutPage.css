@@ -1,0 +1,45 @@
+.sold-out-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background-color: #fafafa; /* Light background for a clean look */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 50px auto; /* Centered on the page */
+    max-width: 600px; /* Limit width for better readability */
+  }
+  
+  h1 {
+    font-size: 2.5em; /* Large heading */
+    color: #007bff; /* Red color to signify 'sold out' */
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2em;
+    color: #555; /* Gray color for text */
+    margin: 10px 0;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .back-button {
+    background-color: #007bff; /* Blue background for the button */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Font size */
+    transition: background-color 0.3s; /* Smooth hover effect */
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
