@@ -8,6 +8,8 @@ import PaintingsList from './pages/PaintingsList';
 import SignIn from './pages/SignIn';
 import Logout from './pages/Logout';
 import SoldOutPage from './pages/SoldOutPage';
+import SignInPage from './/pages/SignInPage';
+import CreateAccountPage from './pages/CreateAccountPage';
 // import Login from './pages/Login';
 
 const App = () => {
@@ -31,6 +33,8 @@ const App = () => {
             {/* 1 */}
             {/* <Route path="/login" element={<Login />} /> */}
             {/* 2 */}
+            <Route path="/sign-in-page" element={<SignInPage />} />
+          <Route path="/create-account" element={<CreateAccountPage />} />
             <Route path="/logout" element={<Logout />} />
             <Route path="/sold-out-container" element={<SoldOutPage />} />
           </Routes>

@@ -1,0 +1,83 @@
+.sign-in-page {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sign-in-page h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .sign-in-page .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .sign-in-page label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .sign-in-page input[type="email"],
+  .sign-in-page input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .sign-in-page button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #111;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .sign-in-page button[type="submit"] {
+    background-color: #f0c14b;
+    border: 1px solid #a88734;
+  }
+  
+  .sign-in-page button[type="submit"]:hover {
+    background-color: #ddb347;
+  }
+  
+  .sign-in-page button[type="button"] {
+    background-color: #e7e9ec;
+    border: 1px solid #adb1b8;
+  }
+  
+  .sign-in-page button[type="button"]:hover {
+    background-color: #d6d9dc;
+  }
+  
+  .sign-in-page p {
+    font-size: 12px;
+    color: #666;
+    margin: 15px 0;
+  }
+  
+  .sign-in-page hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+  }
+
+  
